@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="./styles.css" />
+
+    <title>Responsive menu dropdown</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="header__logo">John Wick</a>
+
+      <i class="bx bx-menu header__toggle" id="header-toggle"></i>
+
+      <nav class="nav" id="nav-menu">
+        <div class="nav__content bd-grid">
+          <a href="" class="nav__perfil">
+            <div>
+              <span class="nav__name">John Wick</span>
+            </div>
+          </a>
+
+          <div class="nav__menu">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#" class="nav__link active">Home</a>
+              </li>
+
+              <li class="nav__item dropdown">
+                <a href="#" class="nav__link dropdown__link"
+                  >About <i class="bx bx-chevron-down dropdown__icon"></i
+                ></a>
+
+                <ul class="dropdown__menu">
+                  <li class="dropdown__item">
+                    <a href="#" class="nav__link">About me</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a href="#" class="nav__link">Location</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a href="#" class="nav__link">Studies</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a href="#" class="nav__link">Experience</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav__item">
+                <a href="#" class="nav__link">Skills</a>
+              </li>
+
+              <li class="nav__item dropdown">
+                <a href="#" class="nav__link dropdown__link"
+                  >Works <i class="bx bx-chevron-down dropdown__icon"></i
+                ></a>
+
+                <ul class="dropdown__menu">
+                  <li class="dropdown__item">
+                    <a href="#" class="nav__link">Recent jobs</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a href="#" class="nav__link">Better jobs</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a href="#" class="nav__link">Work Awards</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a href="#" class="nav__link">Projects</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav__item">
+                <a href="#contact" class="nav__link">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
