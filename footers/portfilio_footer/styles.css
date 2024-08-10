@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.ft_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.footer {
+  min-height: 170px;
+  width: 100%;
+  background: #e1e1e1;
+}
+.ft_icons {
+  width: auto;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.ft_icon {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+.ft_icon:last-child {
+  margin-right: 0;
+  height: 1.4rem;
+}
+
+.ft_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cn_endblock {
+  margin-top: 1.3rem;
+  min-height: 130px;
+  width: 75%;
+  border: 1px #000;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.contact {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: initial;
+  color: #404040;
+}
+.c_name {
+  font-size: 0.67rem;
+  color: #404040;
+  font-weight: lighter;
+}
+
+.email_icon {
+  width: 27px;
+  height: 22px;
+}
+
+.join_hope {
+  font-weight: 250;
+  width: 20rem;
+}
+
+.icon {
+  transition: transform 0.2s ease-in-out; /* Smooth transition for scaling */
+}
+
+.icon:hover {
+  transform: scale(1.1); /* Increase size by 10% on hover */
+}
+
+@media (max-width: 924px) {
+  .cn_endblock {
+    width: 85%;
+  }
+  .join_hope {
+    width: 17rem;
+  }
+}
+
+@media (max-width: 675px) {
+  .footer {
+    min-height: 150px;
+  }
+  .joinprojects_endblock {
+    display: none;
+  }
+  .contact {
+    display: flex;
+    justify-content: center;
+  }
+  .c_name {
+    display: flex;
+    justify-content: center;
+  }
+  .cn_endblock {
+    width: 100%;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+}
+
+.joinprojects_endblock {
+  font-family: "Montserrat", sans-serif;
+  font-weight: lighter;
+  color: #404040;
+  font-style: light;
+}

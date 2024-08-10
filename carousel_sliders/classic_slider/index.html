@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== BOXICONS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="./styles.css" />
+
+    <title>Responsive Slider</title>
+  </head>
+
+  <body>
+    <div class="slider">
+      <!-- fade css -->
+      <div class="myslide fade">
+        <div class="txt">
+          <h1>IMAGE 1</h1>
+          <p>Web Devoloper<br />The code for this Slider is provided below</p>
+        </div>
+        <img class="slider_img" src="./imgs&icons/img1.jpg" />
+      </div>
+
+      <div class="myslide fade">
+        <div class="txt">
+          <h1>IMAGE 2</h1>
+          <p>Web Devoloper<br />The code for this Slider is provided below</p>
+        </div>
+        <img class="slider_img" src="./imgs&icons/img3.jpg" />
+      </div>
+
+      <div class="myslide fade">
+        <div class="txt">
+          <h1>IMAGE 3</h1>
+          <p>Web Devoloper<br />The code for this Slider is provided below</p>
+        </div>
+        <img class="slider_img" src="./imgs&icons/img5.jpg" />
+      </div>
+      <!-- /fade css -->
+
+      <!-- onclick js -->
+      <a class="prev" onclick="plusSlides(-1)"
+        ><i class="bx bx-chevron-left"></i
+      ></a>
+      <a class="next" onclick="plusSlides(1)"
+        ><i class="bx bx-chevron-right"></i
+      ></a>
+
+      <div class="dotsbox" style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+      <!-- /onclick js -->
+    </div>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="./script.js"></script>
+  </body>
+</html>
